@@ -12,11 +12,13 @@
 
 'use strict';
 // 
+var numofCorrectAnswers = 0 
 function checkAnswer(question){
  question = prompt(question)
  question = question.toLowerCase() 
   console.log(question)
   if (question === 'yes' || question === 'y'){
+    numofCorrectAnswers++
     alert('You got it right!')
   } else if (question === 'no' || question === 'n'){
     alert('Wrong Answer.')
