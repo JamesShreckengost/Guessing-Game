@@ -6,6 +6,8 @@ section {
   background-color: rgb(120, 16, 216);
   text-align: left;
   border: solid black 5px;
+  padding: 20px;
+  margin: 10px;
 }
 
 li {
@@ -24,8 +26,15 @@ h2 {
   color: aqua;
   border: solid black;
   border-color: aqua;
+  padding: 5px;
 }
 
 h1 {
   color:rgb(120, 16, 216);
+}
+
+footer {
+  background-color: rgb(120, 16, 216);
+  border: solid black 5px;
+  margin: 10px;
 }
