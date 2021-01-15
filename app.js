@@ -12,41 +12,56 @@
 
 'use strict';
 // 
-var numofCorrectAnswers = 0 
-function checkAnswer(question){
- question = prompt(question)
- question = question.toLowerCase() 
-  console.log(question)
-  if (question === 'yes' || question === 'y'){
-    numofCorrectAnswers++
-    alert('You got it right!')
-  } else if (question === 'no' || question === 'n'){
-    alert('Wrong Answer.')
-  }
+// var numofCorrectAnswers = 0 
+// function checkAnswer(question){
+//  question = prompt(question)
+//  question = question.toLowerCase() 
+//   console.log(question)
+//   if (question === 'yes' || question === 'y'){
+//     numofCorrectAnswers++
+//     alert('You got it right!')
+//   } else if (question === 'no' || question === 'n'){
+//     alert('Wrong Answer.')
+//   }
+// }
+
+// var question1 = "Do I have a puppy?";
+// //console.log("You are correct")
+
+// var question2 = "Do I live in the Bay area?";
+// //console.log("You are correct")
+
+// var question3 = "Do I use a Macbook?";
+// //console.log("You are correct")
+
+// var question4 = "Do I like candles?";
+// //console.log("You are correct")
+
+// var question5 = "Do I like sugar and cream in my coffee?";
+// //console.log("You are correct")
+
+
+// var userName = prompt("What is your name?")
+// var response1 = 'Your name is: '
+// alert(response1 + userName);
+
+
+// checkAnswer(question2)
+// checkAnswer(question3)
+// checkAnswer(question4)
+// checkAnswer(question5)
+
+var arrayofAnswers = []
+var askQuestion = function(question){
+  var answer = prompt(question);
+  arrayofAnswers.push(answer);
 }
 
-var question1 = "Do I have a puppy?";
-//console.log("You are correct")
+askQuestion('Do I have a puppy?')
+askQuestion('Do I live in the Bay Area?')
+askQuestion('Do I use a macbook?')
+askQuestion('Do i like candles?')
+askQuestion('Do I like sugar and cream in my coffee?')
+console.log(arrayofAnswers)
 
-var question2 = "Do I live in the Bay area?";
-//console.log("You are correct")
-
-var question3 = "Do I use a Macbook?";
-//console.log("You are correct")
-
-var question4 = "Do I like candles?";
-//console.log("You are correct")
-
-var question5 = "Do I like sugar and cream in my coffee?";
-//console.log("You are correct")
-
-
-var userName = prompt("What is your name?")
-var response1 = 'Your name is: '
-alert(response1 + userName);
-
-
-checkAnswer(question2)
-checkAnswer(question3)
-checkAnswer(question4)
-checkAnswer(question5)
+// We are making changes to see if we can add this file
